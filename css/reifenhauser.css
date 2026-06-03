@@ -1,0 +1,176 @@
+/* ==========================================
+   REIFENHÄUSER (GI LATAM)
+   ========================================== */
+
+.seccion-reifenhäuser{
+    width:100%;
+    padding:35px 0 20px;
+    background:#fff;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.seccion-reifenhäuser .contenedor-grid{
+    max-width:1080px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:48% 52%;
+    gap:45px;
+    align-items:start;
+}
+
+/* --- Columna de Texto --- */
+.seccion-reifenhäuser .columna-texto{
+    color:#3f5277;
+    font-size:14px;
+    line-height:1.95;
+    text-align:justify;
+}
+
+.seccion-reifenhäuser .columna-texto p{
+    margin:0 0 18px;
+}
+
+
+.seccion-reifenhäuser .columna-texto strong {
+    color: #333333;
+    font-weight: 700;
+}
+
+/* ==========================================
+   BOTON
+   ========================================== */
+
+.seccion-reifenhäuser .boton-mas-informacion{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 18px;
+    border:1px solid #1d4f91;
+    color:#1d4f91;
+    text-decoration:none;
+    font-size:13px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.seccion-reifenhäuser .boton-mas-informacion:hover{
+    background:#1d4f91;
+    color:#fff;
+}
+
+/* ==========================================
+   IMAGENES
+   ========================================== */
+
+.seccion-reifenhäuser .columna-multimedia{
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+    align-self:start;
+}
+
+.seccion-reifenhäuser .contenedor-imagen{
+    width:100%;
+}
+
+.seccion-reifenhäuser .contenedor-imagen img{
+    width:100%;
+    display:block;
+    height:auto;
+}
+
+.seccion-reifenhäuser .contenedor-video{
+    width:100%;
+}
+
+.seccion-reifenhäuser .contenedor-video video{
+    width:100%;
+    display:block;
+    height:auto;
+    background:#f4f4f4;
+}
+
+
+@media (max-width: 900px) {
+    .seccion-reifenhäuser .contenedor-grid {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+    }
+    
+    .seccion-reifenhäuser {
+        padding: 40px 15px;
+    }
+}
+
+/* ==========================================
+   Maquinaria reifenhauser
+   ========================================== */
+
+.seccion-maquinaria-exacta {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 40px 20px 80px 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.seccion-maquinaria-exacta .contenedor-productos-exacto {
+    max-width: 1140px; 
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 60px; 
+    align-items: start;
+}
+
+.seccion-maquinaria-exacta .tarjeta-producto-exacto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.seccion-maquinaria-exacta .bloque-imagen-exacto {
+    width: 100%;
+    margin-bottom: 25px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.seccion-maquinaria-exacta .imagen-con-sombra {
+    width: 75%; 
+    max-width: 340px; 
+    height: auto;
+    display: block;
+    border: 1px solid #f2f2f2; 
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08); 
+    border-radius: 3px; 
+}
+
+
+.seccion-maquinaria-exacta .contenido-producto-exacto h3 {
+    color: #222222;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0 0 14px 0;
+    padding: 0;
+}
+
+.seccion-maquinaria-exacta .contenido-producto-exacto p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+@media (max-width: 850px) {
+    .seccion-maquinaria-exacta .contenedor-productos-exacto {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .seccion-maquinaria-exacta .imagen-con-sombra {
+        width: 85%; 
+    }
+}
