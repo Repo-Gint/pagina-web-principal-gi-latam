@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>reifenhauser</title>
+
+<link rel="stylesheet" href="/css/estilos.css">
+<link rel="stylesheet" href="/css/banner-reifenhauser.css">
+<link rel="stylesheet" href="/css/reifenhauser.css">
+<link rel="stylesheet" href="/css/footer.css">
+</head>
+
+<body>
+
+<div class="top-bar"></div>
+
+<div class="logo">
+    <img src="https://grupointerconsult.com/wp-content/uploads/2020/11/logo-final.png">
+</div>
+
+<div id="navbar-container"></div>
+
+<section class="banner-servicios">
+    <img src="https://grupointerconsult.com/wp-content/uploads/2021/04/Linea-GI.jpg">
+</section>
+
+<section class="seccion-reifenhäuser">
+    <div class="contenedor-grid">
+        
+        <div class="columna-texto">
+            <p>Con más de 100 años de experiencia, <strong>Reifenhäuser</strong> ha desarrollado sistemas avanzados y altamente eficientes para la extrusión de materiales plásticos, convirtiéndose en líder mundial en diseño y fabricación de sistemas para monoextrusión y coextrusión de hasta 11 capas para lámina termoformable.</p>
+            <p>Utiliza los mejores componentes en sus sistemas, desde mezcladores y dosificadores gravimétricos con control centralizado, hasta unidades de embobinado centrales o de torreta.</p>
+            <p>Produce líneas completas para extrusión y coextrusión de láminas, desde 0,1mm hasta 3,0mm de espesor, para diferentes materiales tales como: <strong>PS, PP, PET, PLA y PE</strong>, además de equipamientos opcionales para recubrimientos especiales y líneas de extrusión para lámina de hasta 4 metros de ancho, con rendimientos de más de 2,500 kg/h.</p>
+            <p>Nuestro Centro Tecnológico para Extrusión de Lámina, ofrece toda la infraestructura para el desarrollo de lámina monocapa y multicapa en materiales como: PET, PP y PS, utilizando la <strong>tecnología Reifenhäuser (FDA approved)</strong> más avanzada que existe actualmente.</p>
+            <p><strong>Reifenhäuser</strong> es el único fabricante de extrusoras de lámina que cuenta con la innovadora Calandra Mecatrónica MT, misma que no utiliza sistemas hidráulicos para el ajuste del espesor de la lámina, ahorra energía y acorta considerablemente los tiempos respecto a cambios de producto.</p>
+            <p>Esta novedad también fue incorporada en las nuevas líneas de extrusión de alta velocidad para lámina termoformable.</p>
+            <a href="#" class="boton-mas-informacion">Más información</a>
+        </div>
+
+        <div class="columna-multimedia">
+            <div class="contenedor-imagen">
+                <img src="https://grupointerconsult.com/wp-content/uploads/2021/03/Grupo-Interconsult-2.jpg" alt="Maquinaria Reifenhäuser">
+            </div>
+
+        <div class="contenedor-video video-ajustado">
+            <video id="video-auto" controls autoplay loop muted playsinline>
+                <source src="https://grupointerconsult.com/wp-content/uploads/2024/10/GI-VIDEO-rx.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="seccion-maquinaria-exacta">
+    <div class="contenedor-productos-exacto">
+        
+        <div class="tarjeta-producto-exacto">
+            <div class="bloque-imagen-exacto">
+                <img src="https://grupointerconsult.com/wp-content/uploads/2020/11/maq2_4.1.jpg" alt="Líneas de Extrusión de alta velocidad de lámina termoformable" class="imagen-con-sombra">
+            </div>
+            <div class="contenido-producto-exacto">
+                <h3>Líneas de Extrusión de alta velocidad de lámina termoformable</h3>
+                <p>Las líneas de extrusión de lámina Reifenhäuser pueden procesar todos los polímeros más usuales. Tres sistemas de coextrusión, siete diferentes diseños de cabezales y calandras con dirección de extrusión horizontal, vertical e inclinada, facilitan la configuración óptima para cada aplicación.</p>
+            </div>
+        </div>
+
+        <div class="tarjeta-producto-exacto">
+            <div class="bloque-imagen-exacto">
+                
+                <img src="https://grupointerconsult.com/wp-content/uploads/2020/11/maq2_5.1.jpg" alt="Líneas de recubrimiento por extrusión de alta calidad sin adhesivo" class="imagen-con-sombra">
+            </div>
+            <div class="contenido-producto-exacto">
+                <h3>Líneas de recubrimiento por extrusión de alta calidad sin adhesivo</h3>
+                <p>Suministra la más avanzada tecnología para la extrusión de película para metalización, laminación y protección, empaques barrera, empaques para medicinas y empaques de alimentos.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div id="footer-container"></div>
+
+<script src="/js/footer.js"></script>
+<script src="/js/navbar.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const video = document.getElementById("video-auto");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                video.play().catch(error => {
+                    console.log("El auto-play fue bloqueado o pausado:", error);
+                });
+            } else {
+                video.pause();
+            }
+        });
+    }, {
+        threshold: 0.5
+    });
+
+    if (video) {
+        observer.observe(video);
+    }
+});
+</script>
+
+
+</body>
+</html>
