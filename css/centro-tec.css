@@ -1,0 +1,148 @@
+/* ==========================================
+   ESTILOS GENERALES: CENTRO TECNOLÓGICO
+   ========================================== */
+
+.contenedor-centro-tecnologico {
+    width: 76%;
+    max-width: 1030px; 
+    margin: 40px auto 80px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* --- Títulos y Subtítulos --- */
+.contenedor-centro-tecnologico .titulo-principal-ct {
+    font-size: 36px;
+    color: #2a32a0; 
+    text-align: center;
+    font-weight: 700;
+    margin: 0 0 35px 0;
+}
+
+.contenedor-centro-tecnologico .subtitulo-izq-ct {
+    font-size: 26px;
+    color: #2a32a0; 
+    text-align: left;
+    font-weight: 700;
+    margin: 40px 0 25px 0;
+}
+
+/* --- Línea Separadora Azul Intermedia --- */
+.contenedor-centro-tecnologico .linea-separadora-azul-ct {
+    width: 100%;
+    height: 6px;
+    background-color: #2a32a0;
+    margin: 45px 0;
+}
+
+/* --- Bloque de Imagen Principal --- */
+.contenedor-centro-tecnologico .contenedor-imagen-destacada-ct {
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.contenedor-centro-tecnologico .contenedor-imagen-destacada-ct img {
+    width: 100%;
+    max-width: 1030px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* --- Estilos de Párrafos Justificados Generales --- */
+.contenedor-centro-tecnologico p {
+    font-size: 15.5px;
+    color: #666666;
+    line-height: 1.75;
+    text-align: justify; 
+    margin: 0 0 15px 0;
+}
+
+.contenedor-centro-tecnologico strong {
+    color: #333333;
+    font-weight: 700;
+}
+
+/* ==========================================
+   ESTRUCTURA DE TABLA MODERNA (GRID)
+   ========================================== */
+
+.contenedor-centro-tecnologico .tabla-entrenamientos-ct {
+    width: 100%;
+    border: 1px solid #e5e5e5; 
+    background-color: #ffffff;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.contenedor-centro-tecnologico .fila-entrenamiento-ct {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 40px;
+    padding: 35px 30px; 
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.contenedor-centro-tecnologico .fila-entrenamiento-ct:last-child {
+    border-bottom: none;
+}
+
+.contenedor-centro-tecnologico .fila-entrenamiento-ct div {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contenedor-centro-tecnologico .celda-enfoque-ct {
+    padding-top: 15px; 
+}
+
+.contenedor-centro-tecnologico .texto-informativo-ct {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* ==========================================
+   DISEÑO COMPLETAMENTE RESPONSIVO
+   ========================================== */
+@media (max-width: 1024px) {
+    .contenedor-centro-tecnologico {
+        width: 85%;
+    }
+    .contenedor-centro-tecnologico .fila-entrenamiento-ct {
+        gap: 25px;
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor-centro-tecnologico {
+        width: 90%;
+    }
+    .contenedor-centro-tecnologico .titulo-principal-ct {
+        font-size: 30px;
+    }
+    .contenedor-centro-tecnologico .subtitulo-izq-ct {
+        font-size: 22px;
+    }
+    /* En tabletas y móviles la tabla se transforma dinámicamente a una sola columna */
+    .contenedor-centro-tecnologico .fila-entrenamiento-ct {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 25px 20px;
+    }
+    .contenedor-centro-tecnologico .celda-enfoque-ct {
+        padding-top: 0; 
+    }
+    .contenedor-centro-tecnologico .linea-separadora-azul-ct {
+        height: 4px;
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .contenedor-centro-tecnologico {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
