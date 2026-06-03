@@ -3,9 +3,8 @@
         <li><a href="/index.html">INICIO</a></li>
         <li class="menu-item menu-item-has-children dropdown">
             <a href="#" class="dropdown-toggle">
-                PRODUCTOS <span class="arrow">▾</span>
+                PRODUCTOS <i class="fa-solid fa-arrow-right arrow-icon"></i>
             </a>
-
             <ul class="sub-menu">
                 <li><a href="/productos/reifenhauser.html">REIFENHÄUSER</a></li>
                 <li><a href="/productos/illig.html">ILLIG</a></li>
@@ -16,7 +15,17 @@
         <li><a href="/servicios.html">SERVICIOS</a></li>
         <li><a href="/centro-tecnologico.html">CENTRO TECNOLÓGICO</a></li>
         <li><a href="/noticias/noticias.html">NOTICIAS</a></li>
-        <li><a href="/redes-sociales.html">REDES SOCIALES</a></li>
+        
+        <li class="menu-item menu-item-has-children dropdown">
+            <a href="#" class="dropdown-toggle">
+                REDES SOCIALES <i class="fa-solid fa-arrow-right arrow-icon"></i>
+            </a>
+            <ul class="sub-menu">
+                <li><a href="https://www.youtube.com/channel/UCwVQU7f4vnvTIHp8InGV4UA" target="_blank"><i class="fab fa-youtube"></i> YOUTUBE</a></li>
+                <li><a href="https://m.facebook.com/grupointerconsult/" target="_blank"><i class="fab fa-facebook"></i> FACEBOOK</a></li>
+                <li><a href="https://www.linkedin.com/company/grupo-interconsult/" target="_blank"><i class="fab fa-linkedin"></i> LINKEDIN</a></li>
+            </ul>
+        </li>
         <li><a href="/contacto.html">CONTACTO</a></li>
     </ul>
 </nav>
@@ -24,15 +33,7 @@
 <div class="mobile-menu-btn" onclick="toggleMenu()">
     <span>Seleccionar página</span>
     <span class="menu-icon">
-        <svg xmlns="http://www.w3.org/2000/svg"
-             width="22"
-             height="22"
-             viewBox="0 0 24 24"
-             fill="none"
-             stroke="#333"
-             stroke-width="1.8"
-             stroke-linecap="round"
-             stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"/>
             <path d="M21 21l-6 -6"/>
         </svg>
@@ -43,10 +44,9 @@
     <ul>
         <li><a href="/index.html">INICIO</a></li>
         <li class="menu-item menu-item-has-children dropdown">
-            <a href="#" class="dropdown-toggle">
-                PRODUCTOS <span class="arrow">▾</span>
+            <a href="#" class="dropdown-toggle" onclick="toggleMobileDropdown(this, event)">
+                PRODUCTOS <i class="fa-solid fa-arrow-right arrow-icon"></i>
             </a>
-
             <ul class="sub-menu">
                 <li><a href="/productos/reifenhauser.html">REIFENHÄUSER</a></li>
                 <li><a href="/productos/illig.html">ILLIG</a></li>
@@ -57,7 +57,17 @@
         <li><a href="/servicios.html">SERVICIOS</a></li>
         <li><a href="/centro-tecnologico.html">CENTRO TECNOLÓGICO</a></li>
         <li><a href="/noticias/noticias.html">NOTICIAS</a></li>
-        <li><a href="/redes-sociales.html">REDES SOCIALES</a></li>
+        
+        <li class="menu-item menu-item-has-children dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleMobileDropdown(this, event)">
+                REDES SOCIALES <i class="fa-solid fa-arrow-right arrow-icon"></i>
+            </a>
+            <ul class="sub-menu">
+                <li><a href="https://www.youtube.com/channel/UCwVQU7f4vnvTIHp8InGV4UA" target="_blank"><i class="fab fa-youtube"></i> YOUTUBE</a></li>
+                <li><a href="https://m.facebook.com/grupointerconsult/" target="_blank"><i class="fab fa-facebook"></i> FACEBOOK</a></li>
+                <li><a href="https://www.linkedin.com/company/grupo-interconsult/" target="_blank"><i class="fab fa-linkedin"></i> LINKEDIN</a></li>
+            </ul>
+        </li>
         <li><a href="/contacto.html">CONTACTO</a></li>
     </ul>
 </nav>

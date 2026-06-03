@@ -516,4 +516,20 @@ nav ul li a:hover {
     }
 }
 
+.arrow-icon {
+    font-size: 13px;
+    margin-left: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+}
 
+#menu .menu-item-has-children:hover .arrow-icon {
+    transform: rotate(90deg);
+    color: #0056b3; 
+}
+
+
+.mobile-menu .menu-item-has-children.active .arrow-icon {
+    transform: rotate(90deg);
+}

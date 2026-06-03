@@ -394,7 +394,7 @@
 .acordeon-item {
     width: 100%;
     border: 1px solid #e2e2e2;
-    background-color: #f9f9f9; /* Color gris de fondo cuando está cerrado */
+    background-color: #f9f9f9; 
     border-radius: 2px;
     box-sizing: border-box;
     overflow: hidden;
@@ -434,15 +434,13 @@
    ESTADOS CUANDO ESTÁ ABIERTO (.abierto)
    ========================================== --> */
 
-/* Cambia el fondo del item a blanco */
 .acordeon-item.abierto {
     background-color: #ffffff;
     border: 1px solid #dcdcdc;
 }
 
-/* Muestra el contenido interno solo si tiene la clase .abierto */
 .acordeon-item.abierto .acordeon-contenido {
-    display: flex; /* Activa el contenedor de la imagen */
+    display: flex;
 }
 
 /* Hace que el texto del encabezado resalte */
