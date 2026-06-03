@@ -1,0 +1,213 @@
+/* ==========================================
+   BANNER SERVICIOS - COPIA EXACTA REIFENHÄUSER
+   ========================================== */
+
+.banner-servicios {
+    width: 76%;
+    max-width: 1140px;
+    margin: 50px auto;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.banner-servicios img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12),
+                0px 1px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+}
+
+/* RESPONSIVE DESIGN BANNER */
+@media (max-width: 992px) {
+    .banner-servicios {
+        width: 85%;
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-servicios {
+        width: 100%;
+        padding: 0 15px;
+        margin: 20px auto;
+    }
+
+    .banner-servicios img {
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+    }
+}
+
+/* ==========================================
+   SECCIÓN RENNCO - DISEÑO DE CONTENEDORES
+   ========================================== */
+
+.seccion-rennco {
+    width: 76%;
+    max-width: 1140px;
+    margin: 0 auto 50px auto;
+    box-sizing: border-box;
+}
+
+.seccion-rennco .contenedor-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr; 
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* --- Columna de Texto --- */
+.seccion-rennco .columna-texto {
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.85;
+    text-align: left;
+}
+
+.seccion-rennco .columna-texto p {
+    margin: 0 0 20px 0;
+}
+
+.seccion-rennco .columna-texto strong {
+    color: #222222;
+    font-weight: 700;
+}
+
+/* Botón Más Información */
+.seccion-rennco .boton-mas-informacion {
+    display: inline-block;
+    padding: 10px 24px;
+    border: 1.5px solid #004481; 
+    color: #004481;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 2px;
+    transition: all 0.2s ease-in-out;
+    margin-top: 10px;
+}
+
+.seccion-rennco .boton-mas-informacion:hover {
+    background-color: #004481;
+    color: #ffffff;
+}
+
+/* --- Columna Multimedia --- */
+.seccion-rennco .columna-multimedia {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.seccion-rennco .contenedor-imagen {
+    background: transparent;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilo exacto para la imagen nativa de WordPress */
+.seccion-rennco .contenedor-imagen img.wp-image-1407 {
+    width: 100%;
+    max-width: 471px; 
+    height: auto;
+    display: block;
+}
+
+/* Contenedor del Video */
+.seccion-rennco .contenedor-video video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* RESPONSIVE DESIGN SECCIÓN */
+@media (max-width: 992px) {
+    .seccion-rennco {
+        width: 85%;
+    }
+    .seccion-rennco .contenedor-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .seccion-rennco .contenedor-imagen {
+        justify-content: center; 
+    }
+}
+
+@media (max-width: 576px) {
+    .seccion-rennco {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .seccion-rennco .boton-mas-informacion {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
+
+/* ==========================================
+   GALERÍA DE PRODUCTOS RENNCO (2 COLUMNAS)
+   ========================================== */
+
+.productos-rennco-galeria {
+    width: 76%;
+    max-width: 1140px;
+    margin: 0 auto 60px auto;
+    box-sizing: border-box;
+}
+
+.productos-rennco-galeria .contenedor-grid-productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px; 
+    align-items: center;
+}
+
+
+.productos-rennco-galeria .tarjeta-producto-item {
+    width: 100%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.productos-rennco-galeria .tarjeta-producto-item img.wp-image-1002,
+.productos-rennco-galeria .tarjeta-producto-item img.wp-image-1003 {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08), 
+                0px 1px 5px rgba(0, 0, 0, 0.04);
+    border-radius: 2px; 
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN (PROPIEDADES ADAPTATIVAS)
+   ========================================== */
+@media (max-width: 992px) {
+    .productos-rennco-galeria {
+        width: 85%;
+    }
+    .productos-rennco-galeria .contenedor-grid-productos {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .productos-rennco-galeria .contenedor-grid-productos {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .productos-rennco-galeria {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
