@@ -1,0 +1,94 @@
+/* ==========================================
+   QUIENES SOMOS - ESTILO GI LATAM
+   ========================================== */
+
+.quienes-somos{
+    background:#fff;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:75px 0 0;
+}
+
+.contenido{
+    width:100%;
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 20px;
+    box-sizing:border-box;
+}
+
+.quienes-somos h1{
+    margin:0 0 70px;
+    text-align:center;
+    color:#003c96;
+    font-size:32px;
+    font-weight:700;
+    line-height:1;
+}
+
+/* COLUMNAS */
+
+.columnas{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:85px;
+}
+
+/* TITULOS AZULES */
+
+.columna h3{
+    margin:0 0 18px;
+    color:#003c96;
+    font-size:24px;
+    font-weight:700;
+    line-height:1.05;
+    letter-spacing:0;
+}
+
+/* PARRAFOS */
+
+.columna p{
+    margin:0 0 22px;
+    color:#5b5b5b;
+    font-size:14px;
+    font-weight:400;
+    line-height:1.95;
+    text-align:justify;
+}
+
+.columna strong{
+    color:#555;
+    font-weight:700;
+}
+
+/* BARRA AZUL */
+
+.linea-azul{
+    width:100%;
+    height:22px;
+    background:#003c96;
+    margin-top:60px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+    .quienes-somos{
+        padding-top:40px;
+    }
+
+    .quienes-somos h1{
+        font-size:28px;
+        margin-bottom:40px;
+    }
+
+    .columnas{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    .columna h3{
+        font-size:20px;
+    }
+}
